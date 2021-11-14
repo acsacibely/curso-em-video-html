@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídia no HTML</title>
+</head>
+<body>
+    <h1>Olá! Este é um site simples com uma imagem flexível e duas músicas.</h1>
+    <!--
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+-->
+    <picture>
+        <source media="(max-width: 750px )" srcset="conan/conan-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="conan/conan-m.png" type="image/png">
+        <img src="conan/conan-g.png" alt="conan gray deitado lindo te amo">
+    </picture>
+
+    <hr>
+    <audio preload="metadata" controls autoplay>
+        <source src="musicas/The-HillsCrazy-In-Love.mp3" type="audio/mpeg">
+    </audio>
+    <button><a href="musicas/The-HillsCrazy-In-Love.mp3" target="_blank" rel="external" download="The-HillsCrazy-In-Love.mp3" type="audio/mpeg">baixar</a></button>
+    <audio preload="metadata" controls autoplay>
+        <source src="musicas/taxi.mp3" type="audio/mpeg">
+    </audio>
+    <button><a href="musicas/taxi.mp3" target="_blank" rel="external" download="taxi.mp3" type="audio/mpeg">baixar</a></button>
+
+    <hr>
+    <h2>hora do vídeo!</h2>
+    <video controls width="560" poster="imagens/foto-g.png">
+        <source src="video/video.mp4" type="video/mp4">
+    </video>
+    <h2>video do yt</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5MFDUYEC-ao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
