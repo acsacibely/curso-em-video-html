@@ -1,0 +1,33 @@
+body{
+    /*
+    background-color: #000;
+    background-image: url("https://source.unsplash.com/random");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    BACKGROUND - SHORTHAND
+        color image position/size repeat attachment
+    */
+
+    background: #000 url("https://source.unsplash.com/random") center center/cover no-repeat fixed
+}
+div{
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    font-size: 1.5em;
+    text-align: justify;
+    text-indent: 30px;
+}
